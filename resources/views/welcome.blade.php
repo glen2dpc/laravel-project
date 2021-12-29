@@ -10,9 +10,18 @@
 </head>
 
 <body class="ml-2 mr-2">
-<h1 class="text-center text-lg mt-8"><b>SALES DATA</b></h1> <br>
 
-<form action="">
+<div class="flex-end mt-4 text-right mr-20">
+    <form action="create">
+        <button type="submit" class="ml-7 w-32 text-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            + Agregar nuevo
+        </button>
+    </form>
+</div>
+
+<h1 class="ml-20 text-lg"><b>SALES DATA</b></h1> <br>
+
+<form>
     <div class="flex ml-20 mt-2 w-96">
         <div class="w-32">Order Number:</div>
         <input type="search" name="ORDERNUMBER" value="{{ $orderNumber }}" class="h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md"><br>

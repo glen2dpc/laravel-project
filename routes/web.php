@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SaleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,11 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('index');
+
+Route::get('/create', [SaleController::class, 'create'])->name('create');
+
+route::post('/', [SaleController::class, 'store'])->name('store');
+
+Route::get('/edit', [SaleController::class, 'edit'])->name('edit');
 
