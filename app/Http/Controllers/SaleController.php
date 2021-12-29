@@ -20,8 +20,17 @@ class SaleController extends Controller
        return redirect()->route('index');
     }
 
-    public function edit()
+    public function edit($id)
     {
+        $sale = Sale::findOrFail($id);
+        return view('edit', compact('sale'));
+    }
 
+    public function update(Request $request, $id)
+    {
+        $sale = request()->except(['_token']);
+        Sale::where('id', '=', $id)->update($sale);
+
+        return redirect()->route('index');
     }
 }

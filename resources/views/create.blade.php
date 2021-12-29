@@ -13,7 +13,7 @@
 
 <h1 class="ml-20 mt-8 text-lg"><b>CREATE</b></h1><br>
 
-<form action="{{ route('store') }}" method="post" >
+<form action="{{ route('store') }}" method="post">
 
     @csrf
 
@@ -71,7 +71,7 @@
                 <div class="flex-column ml-20 mt-3">
                     <label for="ORDERDATE" class="block text-sm font-medium text-gray-700">Order Date</label>
                     <div>
-                        <input type="datetime-local" name="ORDERDATE" id="ORDERDATE" class="w-80 h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md">
+                        <input type="text" name="ORDERDATE" id="ORDERDATE" class="w-80 h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md">
                     </div>
                 </div>
             </td>
@@ -178,7 +178,7 @@
                 <div class="flex-column ml-20 mt-3">
                     <label for="ADDRESSLINE2" class="block text-sm font-medium text-gray-700">Address Line 2</label>
                     <div>
-                        <input type="text" name="ADDRESSLINE2" id="ADDRESSLINE1" class="w-80 h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md">
+                        <input type="text" name="ADDRESSLINE2" id="ADDRESSLINE2" class="w-80 h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md">
                     </div>
                 </div>
             </td>
@@ -245,7 +245,7 @@
                 <div class="flex-column ml-20 mt-3">
                     <label for="CONTACTFIRSTNAME" class="block text-sm font-medium text-gray-700">Contact First Name</label>
                     <div>
-                        <input type="" name="CONTACTFIRSTNAME" id="CONTACTFIRSTNAME" class="w-80 h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md">
+                        <input type="text" name="CONTACTFIRSTNAME" id="CONTACTFIRSTNAME" class="w-80 h-7 text-center shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-2 border-gray-800 rounded-md">
                     </div>
                 </div>
             </td>

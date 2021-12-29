@@ -205,6 +205,25 @@
                         <td class="whitespace-nowrap text-sm text-center">
                             {{$sale->DEALSIZE}}
                         </td>
+                        <td>
+                            <div class="flex-end text-center">
+                                <form action="/">
+                                    <button type="submit" class="w-32 text-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        Eliminar
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex-end text-center">
+                                <form action="{{ route('edit', $sale->id) }}">
+                                    <button type="submit" class="w-32 text-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        Actualizar
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+
                     </tr>
                     @endforeach
 

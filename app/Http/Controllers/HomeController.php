@@ -33,7 +33,7 @@ class HomeController extends Controller
             $sales=$sales->where('ORDERLINENUMBER', $request->ORDERLINENUMBER);
         }
 
-        $sales = $sales->paginate(20);
+        $sales = $sales->paginate(15);
 
         return view('welcome', compact('sales', 'orderNumber', 'quantityOrdered', 'priceEach', 'orderLine'));
     }
