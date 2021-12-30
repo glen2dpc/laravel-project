@@ -33,4 +33,10 @@ class SaleController extends Controller
 
         return redirect()->route('index');
     }
+
+    public function destroy(Sale $id)
+    {
+        $id->delete();
+        return redirect()->route('index');
+    }
 }

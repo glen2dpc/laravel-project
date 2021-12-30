@@ -25,3 +25,5 @@ route::post('/', [SaleController::class, 'store'])->name('store');
 Route::get('/{id}/edit', [SaleController::class, 'edit'])->name('edit');
 
 Route::post('/{id}', [SaleController::class, 'update'])->name('update');
+
+Route::get('/{id}', [SaleController::class, 'destroy'])->name('destroy');
